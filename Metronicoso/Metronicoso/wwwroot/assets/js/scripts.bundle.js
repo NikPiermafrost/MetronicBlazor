@@ -342,9 +342,12 @@ if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
 }
 
 // Initialize KTApp class on document ready
-$(document).ready(function() {
-    KTApp.init(KTAppSettings);
-});
+var initTheme = () => {
+    $(document).ready(function () {
+        console.log("ciufolo");
+        KTApp.init(KTAppSettings);
+    });
+}
 
 "use strict";
 
